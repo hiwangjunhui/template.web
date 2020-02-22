@@ -1,0 +1,299 @@
+﻿@section Header{
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>静态页面</title>
+    <!--<link href="/styles/module.css" rel="stylesheet" type="text/css" /> -->
+    <link href="/styles/css.css" rel="stylesheet" type="text/css" />
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <!--banner -->
+    <script type="text/javascript" src="/scripts/banner/script.js"></script>
+    <link href="/scripts/banner/css.css" type="text/css" rel="stylesheet" />
+    <!--信息滚动 -->
+    <script type="text/javascript" src="/scripts/roll_text/script.js"></script>
+    <link href="/scripts/roll_text/css.css" type="text/css" rel="stylesheet" />
+    <!--选项卡 -->
+    <script type="text/javascript" src="/scripts/huadongmen.js"></script>
+    <!--滚动 -->
+    <link href="/scripts/pic_scroll/css.css" rel="stylesheet" type="text/css" />
+}
+
+@Html.Partial("_Header")
+<!--banner -->
+<div class="slider-container">
+    <div class="main-slider">
+        <div class="slide-item" style="background:url(/images/banner/banner_00a.jpg) no-repeat center top; display:block;"></div>
+        <div class="slide-item" style="background:url(/images/banner/banner_00b.jpg) no-repeat center top;"></div>
+        <div class="slide-item" style="background:url(/images/banner/banner_00c.jpg) no-repeat center top;"></div>
+    </div>
+    <ul class="thumbs clearfix">
+        <li class="thumb1 curr"></li>
+        <li class="thumb2"></li>
+        <li class="thumb3"></li>
+    </ul>
+    <!--信息滚动 -->
+    <div class="swiper_wrap_bg">
+        <div class="swiper_wrap">
+            <p class="title">售后服务<span>|</span></p>
+            <ul class="font_inner">
+                <li><a href="#">【2019-04-08】1霍林郭勒市珠斯花街道哲南社区，签名修改2个</a><span>已处理</span></li>
+                <li><a href="#">【2019-04-08】2霍林郭勒市珠斯花街道哲南社区，签名修改2个</a><span>处理中</span></li>
+                <li><a href="#">【2019-04-08】3霍林郭勒市珠斯花街道哲南社区，签名修改2个</a><span>处理中</span></li>
+                <li><a href="#">【2019-04-08】4霍林郭勒市珠斯花街道哲南社区，签名修改2个</a><span>处理中</span></li>
+                <li><a href="#">【2019-04-08】5霍林郭勒市珠斯花街道哲南社区，签名修改2个</a><span>处理中</span></li>
+            </ul>
+            <a href="javascript:void(0)" class="lt">&lt;</a>
+            <a href="javascript:void(0)" class="gt">&gt;</a>
+        </div>
+    </div>
+</div>
+
+<!--四大模块 -->
+<div class="block">
+    <div class="column_01">
+        <div class="column_t"><p class="column_title"><b>让互联网更有价值</b><span>MAKE THE INTERNET MORE VALUABLE</span></p></div>
+        <div class="column_c">
+            <div class="part_01">
+                <ul class="clearfix">
+                    <li class="off">
+                        <div class="pic"><a href="#"><img src="/images/pic/pic_01a.jpg" alt="" /></a></div>
+                        <div class="bg">
+                            <div class="list">
+                                <p><a href="#">电子健康卡综合服务管理平台</a></p>
+                                <p><a href="#">全员人口监测综合管理系统</a></p>
+                                <p><a href="#">数据融合综合服务管理平台</a></p>
+                                <p><a href="#">卫生健康行政审批服务管理系统</a></p>
+                            </div>
+                            <div class="button"><a href="#"><span>MORE</span></a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><a href="#"><img src="/images/pic/pic_01b.jpg" alt="" /></a></div>
+                        <div class="bg">
+                            <div class="list">
+                                <p><a href="#">智能顾问</a></p>
+                                <p><a href="#">产品支持</a></p>
+                                <p><a href="#">网是智慧客服</a></p>
+                                <p><a href="#">维保查询与购买</a></p>
+                            </div>
+                            <div class="button"><a href="#"><span>MORE</span></a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><a href="#"><img src="/images/pic/pic_01c.jpg" alt="" /></a></div>
+                        <div class="bg">
+                            <div class="list">
+                                <p><a href="#">党建动态</a></p>
+                                <p><a href="#">规章制度</a></p>
+                                <p><a href="#">工会活动</a></p>
+                                <p><a href="#">工会福利</a></p>
+                            </div>
+                            <div class="button"><a href="#"><span>MORE</span></a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><a href="#"><img src="/images/pic/pic_01d.jpg" alt="" /></a></div>
+                        <div class="bg">
+                            <div class="list">
+                                <p><a href="#">总经理致辞</a></p>
+                                <p><a href="#">公司简介</a></p>
+                                <p><a href="#">企业文化</a></p>
+                                <p><a href="#">人力资源</a></p>
+                            </div>
+                            <div class="button"><a href="#"><span>MORE</span></a></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--解决方案 -->
+<div class="part_02">
+    <div class="block">
+        <div class="part_l">
+            <div class="tab_t">
+                <ul class="clearfix">
+                    <li onclick="huadongmen(1,6,'anniu1_','neirong1_')" id="anniu1_1" class="on"><p><b>全员人口监测</b><span>全员人口监测综合管理系统</span></p></li>
+                    <li onclick="huadongmen(2,6,'anniu1_','neirong1_')" id="anniu1_2"><p><b>电子健康卡</b><span>电子健康卡综合服务管理平台</span></p></li>
+                    <li onclick="huadongmen(3,6,'anniu1_','neirong1_')" id="anniu1_3"><p><b>卫健行政审批</b><span>卫健行政审批服务管理系统</span></p></li>
+                    <li onclick="huadongmen(4,6,'anniu1_','neirong1_')" id="anniu1_4"><p><b>数据融合服务</b><span>数据融合综合服务管理平台</span></p></li>
+                    <li onclick="huadongmen(5,6,'anniu1_','neirong1_')" id="anniu1_5"><p><b>公共设施地理定位</b><span>公共机构设施地理信息系统</span></p></li>
+                    <li onclick="huadongmen(6,6,'anniu1_','neirong1_')" id="anniu1_6"><p><b>人脸识别验证</b><span>人脸识别辅助验证管理系统</span></p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="part_r">
+            <!--全员人口监测综合管理系统 -->
+            <div class="tab_c" id="neirong1_1">
+                <div class="part_title">全员人口监测综合管理系统</div>
+                <div class="sum">系统建设以“一人一卡、一户一档、不重不漏、实时更新”为核心建设原则。实现全市各县/区、乡镇/街道、村/社区应用全覆盖。各应用系统间互相打通，以人口生育管理与服务为业务主线，纵向到县（区）、乡（镇）、村（居），横向到公安等行政部门，对全员人口数据进行有效集成，达到共享互通、优化整合、去除冗余、提升数据质量的目的。</div>
+                <div class="list">
+                    <div class="title">系统架构</div>
+                    <ul class="clearfix">
+                        <li><p>人口与家庭数据管理</p></li>
+                        <li><p>数据质量管理</p></li>
+                        <li><p>数据共享业务协同</p></li>
+                        <li><p>系统管理</p></li>
+                        <li><p>工作人员管理手机端服务</p></li>
+                        <li><p>数据同步与交换系统</p></li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <div class="title">系统创新</div>
+                    <ul class="clearfix">
+                        <li><p>多库对照、人口信息全面准确</p></li>
+                        <li><p>建立基于流动轨迹、服务轨迹视图</p></li>
+                        <li><p>建立证照数据库</p></li>
+                        <li><p>建立数据质量监管体系</p></li>
+                        <li><p>建立人口监测预警机制</p></li>
+                        <li><p>出生人口实时监测、同期比对</p></li>
+                        <li><p>人口个案字段多赋值、可追溯</p></li>
+                        <li><p>建立工作人员档案库</p></li>
+                        <li><p>图片加密、敏感信息加密</p></li>
+                    </ul>
+                </div>
+            </div>
+            <!--电子健康卡综合服务管理平台 -->
+            <div class="tab_c" id="neirong1_2" style="display: none">
+                <div class="part_title">电子健康卡综合服务管理平台</div>
+                <div class="sum">系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍</div>
+                <div class="list">
+                    <div class="title">系统创新</div>
+                    <ul class="clearfix">
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab_c" id="neirong1_3" style="display: none">
+                <div class="part_title">卫健行政审批服务管理系统</div>
+                <div class="sum">系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍</div>
+                <div class="list">
+                    <div class="title">系统创新</div>
+                    <ul class="clearfix">
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab_c" id="neirong1_4" style="display: none">
+                <div class="part_title">数据融合综合服务管理平台</div>
+                <div class="sum">系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍</div>
+                <div class="list">
+                    <div class="title">系统创新</div>
+                    <ul class="clearfix">
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab_c" id="neirong1_5" style="display: none">
+                <div class="part_title">公共机构设施地理信息系统</div>
+                <div class="sum">系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍</div>
+                <div class="list">
+                    <div class="title">系统创新</div>
+                    <ul class="clearfix">
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab_c" id="neirong1_6" style="display: none">
+                <div class="part_title">人脸识别辅助验证管理系统</div>
+                <div class="sum">系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍系统介绍</div>
+                <div class="list">
+                    <div class="title">系统创新</div>
+                    <ul class="clearfix">
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                        <li><p>相关信息相关信息</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clr"></div>
+    </div>
+</div>
+
+<!--新闻动态 -->
+<div class="block">
+    <div class="column_01">
+        <div class="column_t"><p class="column_title"><b>新闻动态</b><span>NEWS INFORMATION</span></p></div>
+        <div class="column_c">
+            <div class="pic_scroll">
+                <div id="ISL_Cont" class="pic_scroll_a">
+                    <div class="pic_scroll_b">
+                        <div class="part_03 fl" id="List1">
+                            <ul class="clearfix">
+                                <li>
+                                    <div class="pic"><a href="#"><img src="/images/ls/ls1.jpg" alt="" /><span>2019-02-20</span></a></div>
+                                    <div class="bg">
+                                        <div class="title"><a href="#">巴彦淖尔市电子健康卡首发会圆满召开</a></div>
+                                        <div class="sum">由国家卫生健康委统计信息中心指导、内蒙古自治区卫生和健康委员会主办、巴彦淖尔市卫生和计划生</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pic"><a href="#"><img src="/images/ls/ls_01.jpg" alt="" /><span>2019-02-20</span></a></div>
+                                    <div class="bg">
+                                        <div class="title"><a href="#">巴彦淖尔市电子健康卡首发会圆满召开巴彦淖尔市电子健康卡首发会圆满召开</a></div>
+                                        <div class="sum">由国家卫生健康委统计信息中心指导、内蒙古自治区卫生和健康委员会主办、巴彦淖尔市卫生和计划生由国家卫生健康委统计信息中心指导、内蒙古自治区卫生和健康委员会主办、巴彦淖尔市卫生和计划生由国家卫生健康委统计信息中心指导、内蒙古自治区卫生和健康委员会主办、巴彦淖尔市卫生和计划生</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pic"><a href="#"><img src="/images/ls/ls_02.jpg" alt="" /><span>2019-02-20</span></a></div>
+                                    <div class="bg">
+                                        <div class="title"><a href="#">巴彦淖尔市电子健康卡首发会圆满召开</a></div>
+                                        <div class="sum">由国家卫生健康委统计信息中心指导、内蒙古自治区卫生和健康委员会主办、巴彦淖尔市卫生和计划生</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="part_03 fl" id="List2"></div>
+                        <div class="clr"></div>
+                    </div>
+                </div>
+                <div class="submit">
+                    <a class="submit_l" onmouseout="ISL_StopDown()" onmouseup="ISL_StopDown()" onmousedown="ISL_GoDown()" href="javascript:;"></a>
+                    <a class="submit_r" onmouseout="ISL_StopUp()" onmouseup="ISL_StopUp()" onmousedown="ISL_GoUp()" href="javascript:;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/scripts/pic_scroll/pic_scroll.js"></script><!--滚动 -->
+@Html.Partial("_Footer")
