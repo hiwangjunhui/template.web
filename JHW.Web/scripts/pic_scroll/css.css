@@ -1,0 +1,34 @@
+﻿@charset "utf-8";
+/*图片左右滚动*/
+.pic_scroll {
+	position:relative;
+}
+.pic_scroll .pic_scroll_a {
+    height: 530px;
+    overflow: hidden;
+	width:1200px;
+}
+.pic_scroll .pic_scroll_b {
+    width: 13200px;
+}
+.pic_scroll .submit a {
+    background: url(/scripts/pic_scroll/pic_scroll.png) no-repeat;
+    display: block;
+    width: 21px;
+    height: 36px;
+	position:absolute;
+	top:215px;
+}
+.pic_scroll .submit .submit_l {
+	left:-50px;
+}
+.pic_scroll .submit .submit_l:hover {
+    background-position: 0 bottom;
+}
+.pic_scroll .submit a.submit_r {
+    background-position: right 0;
+	right:-50px;
+}
+.pic_scroll .submit a.submit_r:hover {
+    background-position: right bottom;
+}

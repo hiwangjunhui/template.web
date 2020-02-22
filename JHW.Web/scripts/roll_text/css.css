@@ -1,0 +1,74 @@
+﻿@charset "utf-8";
+.swiper_wrap_bg {
+	background:url(/images/ico_04a.png);
+	height: 50px;
+	position: absolute;
+	width:100%;
+	bottom:0;
+	left:0;
+}
+.swiper_wrap {
+	position: relative;
+	width: 1200px;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.swiper_wrap .title {
+	background:url(/images/ico_04.png) no-repeat 0 center;
+	float:left;
+	font-size:14px;
+	color: #FFFFFF;
+	padding:0 0 0 22px;
+}
+.swiper_wrap .title span {
+	opacity:0.50; filter:alpha(opacity=50); zoom:1;
+	padding-left:15px;
+}
+.swiper_wrap ul {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 1090px;
+	float: right;
+}
+.swiper_wrap .font_inner a {
+	color: #FFF;
+}
+.swiper_wrap .font_inner a:hover {
+	color: #FFFF00;
+}
+.swiper_wrap .font_inner span {
+	border:1px solid #FFF;
+	padding:1px 8px;
+	margin-left:10px;
+	color:#FFFFFF;
+	border-radius:100px;
+	opacity:0.70; filter:alpha(opacity=70); zoom:1;
+	display:inline-block; *display:inline; zoom:1;
+	font-size:11px;
+	line-height:normal;
+}
+.swiper_wrap .lt, .swiper_wrap .gt {
+	position: absolute;
+	top: 0;
+	font-family: "宋体";
+	font-weight: bold;
+	color: #FFF;
+	opacity:0.70; filter:alpha(opacity=70);
+}
+.swiper_wrap .lt:hover, .swiper_wrap .gt:hover {
+	position: absolute;
+	top: 0;
+	font-family: "宋体";
+	font-weight: bold;
+	color: #FFF;
+	opacity:1; filter:alpha(opacity=100);
+}
+.swiper_wrap .lt {
+	right: 22px;
+}
+.swiper_wrap .gt {
+	right: 0;
+}

@@ -1,0 +1,406 @@
+ERROR 2019-04-26 11:15:36,230 [logerror] System.InvalidOperationException: 尝试创建“JHW.Web.Controllers.HomeController”类型的控制器时出错。请确保控制器具有无参数公共构造函数。 ---> Autofac.Core.DependencyResolutionException: An error occurred during the activation of a particular registration. See the inner exception for details. Registration: Activator = HomeController (ReflectionActivator), Services = [JHW.Web.Controllers.HomeController], Lifetime = Autofac.Core.Lifetime.CurrentScopeLifetime, Sharing = None, Ownership = OwnedByLifetimeScope ---> None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'JHW.Web.Controllers.HomeController' can be invoked with the available services and parameters:
+Cannot resolve parameter 'JHW.IDAL.IDAL`1[JHW.Models.EntityModels.Student] dal' of constructor 'Void .ctor(JHW.IDAL.IDAL`1[JHW.Models.EntityModels.Student])'. (See inner exception for details.) ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'JHW.Web.Controllers.HomeController' can be invoked with the available services and parameters:
+Cannot resolve parameter 'JHW.IDAL.IDAL`1[JHW.Models.EntityModels.Student] dal' of constructor 'Void .ctor(JHW.IDAL.IDAL`1[JHW.Models.EntityModels.Student])'.
+   在 Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.InstanceLookup.Execute()
+   在 Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   在 Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   在 Autofac.Integration.Mvc.AutofacDependencyResolver.GetService(Type serviceType)
+   在 System.Web.Mvc.DefaultControllerFactory.DefaultControllerActivator.Create(RequestContext requestContext, Type controllerType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Mvc.DefaultControllerFactory.DefaultControllerActivator.Create(RequestContext requestContext, Type controllerType)
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   在 System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2019-04-26 11:15:51,885 [logerror] System.InvalidOperationException: 尝试创建“JHW.Web.Controllers.HomeController”类型的控制器时出错。请确保控制器具有无参数公共构造函数。 ---> Autofac.Core.DependencyResolutionException: An error occurred during the activation of a particular registration. See the inner exception for details. Registration: Activator = HomeController (ReflectionActivator), Services = [JHW.Web.Controllers.HomeController], Lifetime = Autofac.Core.Lifetime.CurrentScopeLifetime, Sharing = None, Ownership = OwnedByLifetimeScope ---> None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'JHW.Web.Controllers.HomeController' can be invoked with the available services and parameters:
+Cannot resolve parameter 'JHW.IDAL.IDAL`1[JHW.Models.EntityModels.Student] dal' of constructor 'Void .ctor(JHW.IDAL.IDAL`1[JHW.Models.EntityModels.Student])'. (See inner exception for details.) ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'JHW.Web.Controllers.HomeController' can be invoked with the available services and parameters:
+Cannot resolve parameter 'JHW.IDAL.IDAL`1[JHW.Models.EntityModels.Student] dal' of constructor 'Void .ctor(JHW.IDAL.IDAL`1[JHW.Models.EntityModels.Student])'.
+   在 Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.InstanceLookup.Execute()
+   在 Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   在 Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   在 Autofac.Integration.Mvc.AutofacDependencyResolver.GetService(Type serviceType)
+   在 System.Web.Mvc.DefaultControllerFactory.DefaultControllerActivator.Create(RequestContext requestContext, Type controllerType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Mvc.DefaultControllerFactory.DefaultControllerActivator.Create(RequestContext requestContext, Type controllerType)
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   在 System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2019-04-26 11:18:28,535 [logerror] System.InvalidOperationException: 尝试创建“JHW.Web.Controllers.HomeController”类型的控制器时出错。请确保控制器具有无参数公共构造函数。 ---> Autofac.Core.DependencyResolutionException: An error occurred during the activation of a particular registration. See the inner exception for details. Registration: Activator = HomeController (ReflectionActivator), Services = [JHW.Web.Controllers.HomeController], Lifetime = Autofac.Core.Lifetime.CurrentScopeLifetime, Sharing = None, Ownership = OwnedByLifetimeScope ---> None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'JHW.Web.Controllers.HomeController' can be invoked with the available services and parameters:
+Cannot resolve parameter 'JHW.IDAL.IDAL`1[JHW.Models.EntityModels.Student] dal' of constructor 'Void .ctor(JHW.IDAL.IDAL`1[JHW.Models.EntityModels.Student])'. (See inner exception for details.) ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'JHW.Web.Controllers.HomeController' can be invoked with the available services and parameters:
+Cannot resolve parameter 'JHW.IDAL.IDAL`1[JHW.Models.EntityModels.Student] dal' of constructor 'Void .ctor(JHW.IDAL.IDAL`1[JHW.Models.EntityModels.Student])'.
+   在 Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.InstanceLookup.Execute()
+   在 Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   在 Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   在 Autofac.Integration.Mvc.AutofacDependencyResolver.GetService(Type serviceType)
+   在 System.Web.Mvc.DefaultControllerFactory.DefaultControllerActivator.Create(RequestContext requestContext, Type controllerType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Mvc.DefaultControllerFactory.DefaultControllerActivator.Create(RequestContext requestContext, Type controllerType)
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   在 System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2019-04-26 14:05:59,426 [logerror] System.InvalidOperationException: 尝试创建“JHW.Web.Controllers.HomeController”类型的控制器时出错。请确保控制器具有无参数公共构造函数。 ---> Autofac.Core.DependencyResolutionException: An error occurred during the activation of a particular registration. See the inner exception for details. Registration: Activator = HomeController (ReflectionActivator), Services = [JHW.Web.Controllers.HomeController], Lifetime = Autofac.Core.Lifetime.CurrentScopeLifetime, Sharing = None, Ownership = OwnedByLifetimeScope ---> None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'JHW.Web.Controllers.HomeController' can be invoked with the available services and parameters:
+Cannot resolve parameter 'JHW.IService.IService`1[JHW.Models.EntityModels.Student] dal' of constructor 'Void .ctor(JHW.IService.IService`1[JHW.Models.EntityModels.Student])'. (See inner exception for details.) ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'JHW.Web.Controllers.HomeController' can be invoked with the available services and parameters:
+Cannot resolve parameter 'JHW.IService.IService`1[JHW.Models.EntityModels.Student] dal' of constructor 'Void .ctor(JHW.IService.IService`1[JHW.Models.EntityModels.Student])'.
+   在 Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.InstanceLookup.Execute()
+   在 Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   在 Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   在 Autofac.Integration.Mvc.AutofacDependencyResolver.GetService(Type serviceType)
+   在 System.Web.Mvc.DefaultControllerFactory.DefaultControllerActivator.Create(RequestContext requestContext, Type controllerType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Mvc.DefaultControllerFactory.DefaultControllerActivator.Create(RequestContext requestContext, Type controllerType)
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   在 System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2019-04-26 14:06:25,512 [logerror] System.InvalidOperationException: 尝试创建“JHW.Web.Controllers.HomeController”类型的控制器时出错。请确保控制器具有无参数公共构造函数。 ---> Autofac.Core.DependencyResolutionException: An error occurred during the activation of a particular registration. See the inner exception for details. Registration: Activator = HomeController (ReflectionActivator), Services = [JHW.Web.Controllers.HomeController], Lifetime = Autofac.Core.Lifetime.CurrentScopeLifetime, Sharing = None, Ownership = OwnedByLifetimeScope ---> None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'JHW.Web.Controllers.HomeController' can be invoked with the available services and parameters:
+Cannot resolve parameter 'JHW.IService.IService`1[JHW.Models.EntityModels.Student] dal' of constructor 'Void .ctor(JHW.IService.IService`1[JHW.Models.EntityModels.Student])'. (See inner exception for details.) ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'JHW.Web.Controllers.HomeController' can be invoked with the available services and parameters:
+Cannot resolve parameter 'JHW.IService.IService`1[JHW.Models.EntityModels.Student] dal' of constructor 'Void .ctor(JHW.IService.IService`1[JHW.Models.EntityModels.Student])'.
+   在 Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.InstanceLookup.Execute()
+   在 Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   在 Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   在 Autofac.Integration.Mvc.AutofacDependencyResolver.GetService(Type serviceType)
+   在 System.Web.Mvc.DefaultControllerFactory.DefaultControllerActivator.Create(RequestContext requestContext, Type controllerType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Mvc.DefaultControllerFactory.DefaultControllerActivator.Create(RequestContext requestContext, Type controllerType)
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   在 System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2019-04-28 14:20:02,773 [logerror] System.InvalidOperationException: 找到多个与名为“Home”的控制器匹配的类型。如果为此请求(“{controller}/{action}/{id}”)提供服务的路由没有指定命名空间以搜索与此请求相匹配的控制器，则会发生这种情况。如果是这样，请通过调用带有 'namespaces' 参数的 "MapRoute" 方法的重载来注册此路由。
+
+“Home”请求找到下列匹配的控制器:
+JHW.Web.Controllers.HomeController
+JHW.Web.Areas.Manager.Controllers.HomeController
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerTypeWithinNamespaces(RouteBase route, String controllerName, HashSet`1 namespaces)
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerType(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.DefaultControllerFactory.System.Web.Mvc.IControllerFactory.GetControllerSessionBehavior(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.MvcRouteHandler.GetSessionStateBehavior(RequestContext requestContext)
+   在 System.Web.Mvc.MvcRouteHandler.GetHttpHandler(RequestContext requestContext)
+   在 System.Web.Mvc.MvcRouteHandler.System.Web.Routing.IRouteHandler.GetHttpHandler(RequestContext requestContext)
+   在 System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(HttpContextBase context)
+   在 System.Web.Routing.UrlRoutingModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   在 System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2019-04-28 15:18:53,180 [logerror] System.InvalidOperationException: 找到多个与名为“Home”的控制器匹配的类型。如果为此请求(“{controller}/{action}/{id}”)提供服务的路由没有指定命名空间以搜索与此请求相匹配的控制器，则会发生这种情况。如果是这样，请通过调用带有 'namespaces' 参数的 "MapRoute" 方法的重载来注册此路由。
+
+“Home”请求找到下列匹配的控制器:
+JHW.Web.Controllers.HomeController
+JHW.Web.Areas.Manager.Controllers.HomeController
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerTypeWithinNamespaces(RouteBase route, String controllerName, HashSet`1 namespaces)
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerType(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.DefaultControllerFactory.System.Web.Mvc.IControllerFactory.GetControllerSessionBehavior(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.MvcRouteHandler.GetSessionStateBehavior(RequestContext requestContext)
+   在 System.Web.Mvc.MvcRouteHandler.GetHttpHandler(RequestContext requestContext)
+   在 System.Web.Mvc.MvcRouteHandler.System.Web.Routing.IRouteHandler.GetHttpHandler(RequestContext requestContext)
+   在 System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(HttpContextBase context)
+   在 System.Web.Routing.UrlRoutingModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   在 System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2019-04-28 15:19:54,075 [logerror] System.InvalidOperationException: 找到多个与名为“Home”的控制器匹配的类型。如果为此请求(“{controller}/{action}/{id}”)提供服务的路由没有指定命名空间以搜索与此请求相匹配的控制器，则会发生这种情况。如果是这样，请通过调用带有 'namespaces' 参数的 "MapRoute" 方法的重载来注册此路由。
+
+“Home”请求找到下列匹配的控制器:
+JHW.Web.Controllers.HomeController
+JHW.Web.Areas.Manager.Controllers.HomeController
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerTypeWithinNamespaces(RouteBase route, String controllerName, HashSet`1 namespaces)
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerType(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.DefaultControllerFactory.System.Web.Mvc.IControllerFactory.GetControllerSessionBehavior(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.MvcRouteHandler.GetSessionStateBehavior(RequestContext requestContext)
+   在 System.Web.Mvc.MvcRouteHandler.GetHttpHandler(RequestContext requestContext)
+   在 System.Web.Mvc.MvcRouteHandler.System.Web.Routing.IRouteHandler.GetHttpHandler(RequestContext requestContext)
+   在 System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(HttpContextBase context)
+   在 System.Web.Routing.UrlRoutingModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   在 System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2019-04-28 15:20:39,200 [logerror] System.InvalidOperationException: 找到多个与名为“Home”的控制器匹配的类型。如果为此请求(“{controller}/{action}/{id}”)提供服务的路由没有指定命名空间以搜索与此请求相匹配的控制器，则会发生这种情况。如果是这样，请通过调用带有 'namespaces' 参数的 "MapRoute" 方法的重载来注册此路由。
+
+“Home”请求找到下列匹配的控制器:
+JHW.Web.Controllers.HomeController
+JHW.Web.Areas.Manager.Controllers.HomeController
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerTypeWithinNamespaces(RouteBase route, String controllerName, HashSet`1 namespaces)
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerType(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.DefaultControllerFactory.System.Web.Mvc.IControllerFactory.GetControllerSessionBehavior(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.MvcRouteHandler.GetSessionStateBehavior(RequestContext requestContext)
+   在 System.Web.Mvc.MvcRouteHandler.GetHttpHandler(RequestContext requestContext)
+   在 System.Web.Mvc.MvcRouteHandler.System.Web.Routing.IRouteHandler.GetHttpHandler(RequestContext requestContext)
+   在 System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(HttpContextBase context)
+   在 System.Web.Routing.UrlRoutingModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   在 System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2019-04-28 15:20:39,871 [logerror] System.InvalidOperationException: 找到多个与名为“Home”的控制器匹配的类型。如果为此请求(“{controller}/{action}/{id}”)提供服务的路由没有指定命名空间以搜索与此请求相匹配的控制器，则会发生这种情况。如果是这样，请通过调用带有 'namespaces' 参数的 "MapRoute" 方法的重载来注册此路由。
+
+“Home”请求找到下列匹配的控制器:
+JHW.Web.Controllers.HomeController
+JHW.Web.Areas.Manager.Controllers.HomeController
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerTypeWithinNamespaces(RouteBase route, String controllerName, HashSet`1 namespaces)
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerType(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.DefaultControllerFactory.System.Web.Mvc.IControllerFactory.GetControllerSessionBehavior(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.MvcRouteHandler.GetSessionStateBehavior(RequestContext requestContext)
+   在 System.Web.Mvc.MvcRouteHandler.GetHttpHandler(RequestContext requestContext)
+   在 System.Web.Mvc.MvcRouteHandler.System.Web.Routing.IRouteHandler.GetHttpHandler(RequestContext requestContext)
+   在 System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(HttpContextBase context)
+   在 System.Web.Routing.UrlRoutingModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   在 System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2019-04-28 15:20:40,135 [logerror] System.InvalidOperationException: 找到多个与名为“Home”的控制器匹配的类型。如果为此请求(“{controller}/{action}/{id}”)提供服务的路由没有指定命名空间以搜索与此请求相匹配的控制器，则会发生这种情况。如果是这样，请通过调用带有 'namespaces' 参数的 "MapRoute" 方法的重载来注册此路由。
+
+“Home”请求找到下列匹配的控制器:
+JHW.Web.Controllers.HomeController
+JHW.Web.Areas.Manager.Controllers.HomeController
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerTypeWithinNamespaces(RouteBase route, String controllerName, HashSet`1 namespaces)
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerType(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.DefaultControllerFactory.System.Web.Mvc.IControllerFactory.GetControllerSessionBehavior(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.MvcRouteHandler.GetSessionStateBehavior(RequestContext requestContext)
+   在 System.Web.Mvc.MvcRouteHandler.GetHttpHandler(RequestContext requestContext)
+   在 System.Web.Mvc.MvcRouteHandler.System.Web.Routing.IRouteHandler.GetHttpHandler(RequestContext requestContext)
+   在 System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(HttpContextBase context)
+   在 System.Web.Routing.UrlRoutingModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   在 System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2019-04-28 15:20:40,483 [logerror] System.InvalidOperationException: 找到多个与名为“Home”的控制器匹配的类型。如果为此请求(“{controller}/{action}/{id}”)提供服务的路由没有指定命名空间以搜索与此请求相匹配的控制器，则会发生这种情况。如果是这样，请通过调用带有 'namespaces' 参数的 "MapRoute" 方法的重载来注册此路由。
+
+“Home”请求找到下列匹配的控制器:
+JHW.Web.Controllers.HomeController
+JHW.Web.Areas.Manager.Controllers.HomeController
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerTypeWithinNamespaces(RouteBase route, String controllerName, HashSet`1 namespaces)
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerType(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.DefaultControllerFactory.System.Web.Mvc.IControllerFactory.GetControllerSessionBehavior(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.MvcRouteHandler.GetSessionStateBehavior(RequestContext requestContext)
+   在 System.Web.Mvc.MvcRouteHandler.GetHttpHandler(RequestContext requestContext)
+   在 System.Web.Mvc.MvcRouteHandler.System.Web.Routing.IRouteHandler.GetHttpHandler(RequestContext requestContext)
+   在 System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(HttpContextBase context)
+   在 System.Web.Routing.UrlRoutingModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   在 System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2019-04-28 15:20:40,820 [logerror] System.InvalidOperationException: 找到多个与名为“Home”的控制器匹配的类型。如果为此请求(“{controller}/{action}/{id}”)提供服务的路由没有指定命名空间以搜索与此请求相匹配的控制器，则会发生这种情况。如果是这样，请通过调用带有 'namespaces' 参数的 "MapRoute" 方法的重载来注册此路由。
+
+“Home”请求找到下列匹配的控制器:
+JHW.Web.Controllers.HomeController
+JHW.Web.Areas.Manager.Controllers.HomeController
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerTypeWithinNamespaces(RouteBase route, String controllerName, HashSet`1 namespaces)
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerType(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.DefaultControllerFactory.System.Web.Mvc.IControllerFactory.GetControllerSessionBehavior(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.MvcRouteHandler.GetSessionStateBehavior(RequestContext requestContext)
+   在 System.Web.Mvc.MvcRouteHandler.GetHttpHandler(RequestContext requestContext)
+   在 System.Web.Mvc.MvcRouteHandler.System.Web.Routing.IRouteHandler.GetHttpHandler(RequestContext requestContext)
+   在 System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(HttpContextBase context)
+   在 System.Web.Routing.UrlRoutingModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   在 System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2019-04-28 15:21:25,163 [logerror] System.InvalidOperationException: 找到多个与名为“Home”的控制器匹配的类型。如果为此请求(“{controller}/{action}/{id}”)提供服务的路由没有指定命名空间以搜索与此请求相匹配的控制器，则会发生这种情况。如果是这样，请通过调用带有 'namespaces' 参数的 "MapRoute" 方法的重载来注册此路由。
+
+“Home”请求找到下列匹配的控制器:
+JHW.Web.Controllers.HomeController
+JHW.Web.Areas.Manager.Controllers.HomeController
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerTypeWithinNamespaces(RouteBase route, String controllerName, HashSet`1 namespaces)
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerType(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.DefaultControllerFactory.System.Web.Mvc.IControllerFactory.GetControllerSessionBehavior(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.MvcRouteHandler.GetSessionStateBehavior(RequestContext requestContext)
+   在 System.Web.Mvc.MvcRouteHandler.GetHttpHandler(RequestContext requestContext)
+   在 System.Web.Mvc.MvcRouteHandler.System.Web.Routing.IRouteHandler.GetHttpHandler(RequestContext requestContext)
+   在 System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(HttpContextBase context)
+   在 System.Web.Routing.UrlRoutingModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   在 System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2019-04-28 15:34:54,517 [logerror] System.ArgumentException: 在路由集合中未能找到名为“Manager”的路由。
+参数名: name
+   在 System.Web.Routing.RouteCollection.GetVirtualPath(RequestContext requestContext, String name, RouteValueDictionary values)
+   在 System.Web.Mvc.RouteCollectionExtensions.GetVirtualPathForArea(RouteCollection routes, RequestContext requestContext, String name, RouteValueDictionary values, Boolean& usingAreas)
+   在 System.Web.Mvc.UrlHelper.GenerateUrl(String routeName, String actionName, String controllerName, RouteValueDictionary routeValues, RouteCollection routeCollection, RequestContext requestContext, Boolean includeImplicitMvcValues)
+   在 System.Web.Mvc.RedirectToRouteResult.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+ERROR 2019-04-28 15:35:33,652 [logerror] System.Web.HttpException (0x80004005): 未找到路径“/Manager”的控制器或该控制器未实现 IController。
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   在 System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2019-04-28 15:37:12,788 [logerror] System.Web.HttpException (0x80004005): 未找到路径“/manager”的控制器或该控制器未实现 IController。
+   在 System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   在 System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   在 System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   在 System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2019-06-10 15:21:30,983 [logerror] System.Web.HttpException (0x80004005): 未能在以下路径中找到布局页“~/Views/Shared/_Layout.cshtml”:“~/Views/Shared/_Layout.cshtml”。
+   在 System.Web.WebPages.WebPageExecutingBase.NormalizeLayoutPagePath(String layoutPagePath)
+   在 System.Web.WebPages.StartPage.set_Layout(String value)
+   在 ASP._Page_Views__ViewStart_cshtml.Execute() 位置 D:\Projects\JHW\JHW.Web\Views\_ViewStart.cshtml:行号 2
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+ERROR 2019-06-10 15:25:26,564 [logerror] System.Web.HttpParseException (0x80004005): 在 "@" 字符后面遇到了空格或换行符。只有有效的标识符、关键字、注释、"(" 和 "{" 在代码块开头才有效，并且它们必须紧跟在 "@" 后面，中间没有空格。
+
+   在 System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   在 System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+ERROR 2019-06-10 15:25:34,781 [logerror] System.Web.HttpParseException (0x80004005): 在 "@" 字符后面遇到了空格或换行符。只有有效的标识符、关键字、注释、"(" 和 "{" 在代码块开头才有效，并且它们必须紧跟在 "@" 后面，中间没有空格。
+
+   在 System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   在 System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+ERROR 2019-06-10 15:25:48,696 [logerror] System.Web.HttpParseException (0x80004005): 在 "@" 字符后面遇到了空格或换行符。只有有效的标识符、关键字、注释、"(" 和 "{" 在代码块开头才有效，并且它们必须紧跟在 "@" 后面，中间没有空格。
+
+   在 System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   在 System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+ERROR 2019-06-10 15:25:52,026 [logerror] System.Web.HttpParseException (0x80004005): 在 "@" 字符后面遇到了空格或换行符。只有有效的标识符、关键字、注释、"(" 和 "{" 在代码块开头才有效，并且它们必须紧跟在 "@" 后面，中间没有空格。
+
+   在 System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   在 System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
